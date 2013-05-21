@@ -12,7 +12,7 @@ when "centos","redhat","fedora"
 when "debian","ubuntu"
   default["aide"]["binary"] = "/usr/bin/aide"
   default["aide"]["config"] = "/etc/aide/aide.conf"
-  default["aide"]["extra_parameters"] = "-c /etc/aide/aide.conf >> /mnt/aide.log"
+  default["aide"]["extra_parameters"] = "-c /etc/aide/aide.conf >> /var/log/aide.log"
   default["aide"]["cron_service"] = "cron"
 end
 
